@@ -71,21 +71,21 @@
       <div class="carousel-item active">
         <img
           src="https://paranaportal.uol.com.br/wp-content/uploads/2021/06/Eurocopa-Suecia-Ucrania-escalacoes-onde-assistir-ao-vivo.jpeg"
-          class="d-block w-100" alt="...">
+          class="d-block w-100 objectImage2" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2><i>Eurocopa 2020 - Suécia</i></h2>
           <p>Suécia x Espanha</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://trivela.com.br/wp-content/uploads/2021/06/Embolo-Suica.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="https://trivela.com.br/wp-content/uploads/2021/06/Embolo-Suica.jpg" class="d-block w-100 objectImage2" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
           <h2><i>Eurocopa 2020 - Suiça</i></h2>
           <p>Suiça x País de Galês</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://trivela.com.br/wp-content/uploads/2021/06/Italia-lamenta.jpg" class="d-block w-100" alt="...">
+        <img src="https://trivela.com.br/wp-content/uploads/2021/06/Italia-lamenta.jpg" class="d-block w-100 objectImage2" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2><i>Eurocopa 2020 - Itália</i></h2>
           <p>Itália x Austria</p>
@@ -533,17 +533,20 @@
         <h1>Mande uma mensagem para gente :)</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+          <input type="text" class="form-control" id="nome" onkeyup="validaNome()" placeholder="Nome">
+          <div id="txtNome"></div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          <input type="email" class="form-control" id="email" onkeyup="validaEmail()" placeholder="nome@exemplo.com">
+          <div id="txtEmail"></div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="msg" onkeyup="validaMsg()" rows="3"></textarea>
+          <div id="txtMsg"></div>
         </div>
-        <button class="btn btn-primary">Enviar</button>
+        <button class="btn btn-primary" onclick="mensagem()">Enviar</button>
         
       </div>
       <div class="col-6">
@@ -574,6 +577,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"></script>
+      <script src="assets/js/script.js"></script>
 
 </body>
 
